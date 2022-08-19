@@ -1,6 +1,7 @@
 const path = require('path')
 const mix = require('laravel-mix');
 
+<<<<<<< HEAD
 console.log(__dirname);
 let webpackConfig = {
   resolve: {
@@ -11,6 +12,14 @@ let webpackConfig = {
   stats: {
       children: true,
   },
+=======
+let webpackConfig = {
+  resolve: {
+    alias: {
+      '~orchid': path.resolve(`${__dirname}`, 'vendor/orchid/platform/resources'),
+    },
+  },
+>>>>>>> e01cb1d96073e301871d8918df99682630cb0de5
 };
 
 if (mix.inProduction()) {
