@@ -5,11 +5,14 @@
                 <span class="action card-handle icon-size-fullscreen" data-parent-container-key="@{{it.name}}">
                     <x-orchid-icon path="cursor-move" class="small me-2"></x-orchid-icon>
                 </span>
+<<<<<<< HEAD
                 @if($collapse ?? false)
                 <span class="action collapse-switch" data-action="click->fields--repeater#collapse">
                     <x-orchid-icon path="arrow-down" class="small me-2 transition"></x-orchid-icon>
                 </span>
                 @endif
+=======
+>>>>>>> e01cb1d96073e301871d8918df99682630cb0de5
                 <span class="action icon-plus" data-action="click->fields--repeater#addBlockAfter">
                     <x-orchid-icon path="plus" class="small me-2"></x-orchid-icon>
                 </span>
