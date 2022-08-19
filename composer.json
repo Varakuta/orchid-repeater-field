@@ -1,0 +1,48 @@
+{
+  "name": "nakukryskin/orchid-repeater-field",
+  "description": "Adding support of repeater field to the Orchid RAD platform.",
+  "license": "wtfpl",
+  "authors": [
+    {
+      "name": "Vladislav Zhdanov",
+      "email": "v.jdanov@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "homepage": "https://github.com/nakukryskin/orchid-repeater-field",
+  "keywords": [
+    "Laravel",
+    "Orchid Repeater Field",
+    "Repeater Field"
+  ],
+  "require": {
+    "laravel/framework": "^9.21",
+    "orchid/platform": "^13.0.1"
+  },
+  "require-dev": {
+    "mockery/mockery": "^1.1",
+    "sempro/phpunit-pretty-print": "^1.0",
+    "friendsofphp/php-cs-fixer": "^3.8",
+    "phpunit/phpunit": "^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Nakukryskin\\OrchidRepeaterField\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Nakukryskin\\OrchidRepeaterField\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Nakukryskin\\OrchidRepeaterField\\Providers\\ServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
